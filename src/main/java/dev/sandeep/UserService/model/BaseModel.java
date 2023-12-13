@@ -15,5 +15,5 @@ import static jakarta.persistence.GenerationType.*;
 public class BaseModel {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Long id;
+    private Long id ;
 }

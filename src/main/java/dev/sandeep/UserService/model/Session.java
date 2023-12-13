@@ -18,7 +18,7 @@ public class Session extends BaseModel{
     @ManyToOne
     private User user;
     @Enumerated(EnumType.ORDINAL)
-    private SessionStatus sessionStatus ;
+    private SessionStatus sessionStatus;
 
 
 }
