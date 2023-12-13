@@ -1,0 +1,19 @@
+package dev.sandeep.UserService.model;
+
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.MappedSuperclass;
+import lombok.Getter;
+import lombok.Setter;
+
+import static jakarta.persistence.GenerationType.*;
+
+@MappedSuperclass
+@Getter
+@Setter
+public class BaseModel {
+    @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    private Long id;
+}
