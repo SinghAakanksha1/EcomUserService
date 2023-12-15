@@ -16,8 +16,4 @@ public class User extends BaseModel{
     private String password;
     @ManyToMany
     private Set<Role> roles = new HashSet<>() ;
-
-
-
-
 }
